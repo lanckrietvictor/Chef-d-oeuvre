@@ -11,3 +11,4 @@ http://blog.visme.co/website-color-schemes/ => number 12
 #66FCF1
 #45A29E
 
+![Picture of colour palette](https://github.com/lanckrietvictor/Chef-d-oeuvre/blob/master/Pics%20Readme/Selection_007.png "First colour palette")
