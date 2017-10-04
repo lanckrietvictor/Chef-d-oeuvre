@@ -1,0 +1,17 @@
+.navbar {
+  width: 100vw;
+  height: 8.33vh;
+  background-color: #0b0c10;
+  color: #66FCF1;
+  border: solid 1px #C5C6C7;
+  padding-left: 20px;
+  display: inline-block;
+  line-height: 8.33vh;
+}
+
+#signIn {
+  color: #66FCF1;
+  float: right;
+  font-size: 4em;
+  font-weight: bold;
+}
