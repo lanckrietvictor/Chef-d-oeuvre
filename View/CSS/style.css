@@ -11,7 +11,67 @@
 
 #signIn {
   color: #66FCF1;
-  float: right;
   font-size: 4em;
   font-weight: bold;
+  text-align: right;
+}
+
+#toolsFor {
+  height: 8.33vh;
+  font-size: 2.5em;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 20vw;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size: 1em;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#search {
+  height: 60%;
+  width: 90%;
+  margin: auto;
+  margin-top: 1.5vh;
+  display: block;
+  border-radius:20px;
+}
+
+.item {
+  background-color: #1f2833;
+  border: solid 1px #c5c6c7;
+  height: 16.66vh;
+}
+
+.logo {
+  height: 16vh;
+}
+
+.description {
+  color: #C5C6C7;
+}
+
+h1.description {
+  margin-top: 1vh;
+}
+
+p.description {
+  font-size: 1em;
+}
+
+.link:hover {
+  text-decoration: none;
+  color: #66FCF1;
 }

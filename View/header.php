@@ -17,15 +17,48 @@
     <div class="row">
       <div class="col-xs-12 col-sm-12 navbar">
         <div class="row">
-          <div class="col-xs-6 col-sm-6">
-            <img class="img-responsive" src="View/Pics/1_Primary_logo_on_transparent_249x69.png" alt="Logo AIP">
-          </div>
-          <div class="col-xs-1 col-sm-1">
+        <div class="col-xs-6 col-sm-6">
+          <img class="img-responsive" src="View/Pics/1_Primary_logo_on_transparent_249x69.png" alt="Logo AIP">
+        </div>
+        <div class="col-xs-1 col-sm-1">
 
-          </div>
-          <div class="col-xs-5 col-sm-5" id="signIn">
-            <i class="fa fa-user-circle" aria-hidden="true"></i>
+        </div>
+        <div class="col-xs-5 col-sm-5" id="signIn">
+          <i class="fa fa-user-circle" aria-hidden="true"></i>
             Sign in
+          </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 navbar">
+        <div id="toolsFor" class="row">
+          <div class="col-xs-3 col-sm-3">
+            <div class="row">
+              <div class="col-xs-12 col-sm-12">
+                <div class="dropdown" id="bottom">
+                  <p class="dropbtn">
+                    Used for <i class="fa fa-caret-down" aria-hidden="true"></i>
+                  </p>
+                  <div class="dropdown-content">
+                    <a href="#">All</a>
+                    <br />
+                    <a href="#">Personal use</a>
+                    <a href="#">Professional use</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-3 col-sm-3">
+            <p>Blog</p>
+          </div>
+          <div class="col-xs-3 col-sm-3">
+            <p>About us</p>
+          </div>
+          <div class="col-xs-3 col-sm-3">
+            <p>Contact</p>
           </div>
         </div>
       </div>
@@ -33,10 +66,6 @@
 
     <div class="row">
       <div class="col-xs-12 col-sm-12 navbar">
-        <div class="row">
-          <div class="col-xs-3 col-sm-3">
-            
-          </div>
-        </div>
-    </div
-  </div>
+        <input type="text" name="search" placeholder="Search" id="search"/>
+      </div>
+    </div>
