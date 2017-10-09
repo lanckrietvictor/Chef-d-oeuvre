@@ -15,3 +15,6 @@ http://blog.visme.co/website-color-schemes/ => number 12
 
 ## Mockup
 https://wireframepro.mockflow.com/view/chefdoeuvreVictor
+
+## Used plugins
+[TinyMCE](https://www.tinymce.com/docs/get-started/first-steps/) is used for the input of articles
