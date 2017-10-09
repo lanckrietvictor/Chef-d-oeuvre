@@ -8,10 +8,11 @@ if (empty($_GET)) {
   require_once 'View/homepage.php';
 }
 
-if(!empty($_GET)){
+if(!empty($_GET["action"])){
+  require_once 'Model/specificAppData.php';
   foreach ($apps as $key => $value) {
     if($_GET["action"]==$value['name_app']) {
-      include $_GET["action"].".php";
+      require_once "View/specificApp.php";
       break;
     }
   }

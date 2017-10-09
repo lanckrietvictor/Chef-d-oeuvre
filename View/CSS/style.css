@@ -75,3 +75,17 @@ p.description {
   text-decoration: none;
   color: #66FCF1;
 }
+
+#background {
+  margin-left: -15px;
+  margin-right: -15px;
+  background-color: #1f2833;
+  height: 100vh;
+}
+
+.appTitle {
+  margin-left: 5vw;
+  margin-top: 2vh;
+  color: #C5C6C7;
+  font-size: 4vh;
+}

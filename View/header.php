@@ -10,15 +10,23 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="View/CSS/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="View/CSS/style.css">
+    <script src='https://cloud.tinymce.com/stable/tinymce.min.js'></script>
+    <script>
+      tinymce.init({
+          selector: '#mytextarea'
+        });
+    </script>
     <title>AIP</title>
 </head>
 <body>
-  <div class="container-fluid padding">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-xs-12 col-sm-12 navbar">
         <div class="row">
         <div class="col-xs-6 col-sm-6">
+          <a href="index.php">
           <img class="img-responsive" src="View/Pics/1_Primary_logo_on_transparent_249x69.png" alt="Logo AIP">
+          </a>
         </div>
         <div class="col-xs-1 col-sm-1">
 
