@@ -1,8 +1,5 @@
 <?php
 
-/*!!!!!!!!!!!!!!!!!! DATA !!!!!!!!!!!!!!!!!!!!!!*/
-require_once 'Model/homepageData.php';
-
 /*!!!!!!!!!!!!!!!!!! ADMIN !!!!!!!!!!!!!!!!!!!!!!*/
 
 if (isset($_POST["username"])) {
@@ -22,6 +19,7 @@ if(isset($_GET["admin"])){
     require_once 'View/adminBlog.php';
   } elseif ($_GET["admin"]=="addApp" && isset($_SESSION["username"])) {
     require_once 'View/adminApp.php';
+    require_once 'Model/addApp.php';
   } else {
     require_once 'View/loginAdmin.php';
   }
@@ -34,6 +32,7 @@ elseif (empty($_GET["admin"])) {
 require_once 'View/header.php';
 
 if (empty($_GET) && !isset($_POST['username']) && !isset($_POST['deconnect'])) {
+  require_once 'Model/homepageData.php'; 
   require_once 'View/homepage.php';
 }
 

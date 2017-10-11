@@ -55,6 +55,11 @@
   height: 16.66vh;
 }
 
+.image {
+  background-color: #1f2833;
+  opacity: 0.5;
+}
+
 .logo {
   height: 16vh;
 }

@@ -4,6 +4,7 @@ try
 {
 	// On se connecte à MySQL
 	$pdo = new PDO('mysql:host=localhost;dbname=chefdoeuvre;charset=utf8', 'root', 'user');
+	$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }
 catch(Exception $e)
 {
