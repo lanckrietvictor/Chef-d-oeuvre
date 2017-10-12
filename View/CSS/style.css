@@ -16,6 +16,11 @@
   text-align: right;
 }
 
+#signInLink {
+  text-decoration: none;
+  color: inherit;
+}
+
 #toolsFor {
   height: 8.33vh;
   font-size: 2.5em;
@@ -53,15 +58,17 @@
   background-color: #1f2833;
   border: solid 1px #c5c6c7;
   height: 16.66vh;
+  overflow: hidden;
 }
 
 .image {
   background-color: #1f2833;
-  opacity: 0.5;
 }
 
 .logo {
   height: 16vh;
+  margin-top: auto;
+  z-index: -1;
 }
 
 .description {
@@ -73,7 +80,11 @@ h1.description {
 }
 
 p.description {
-  font-size: 1em;
+  font-size: 2em;
+}
+
+.link {
+  width: 100%;
 }
 
 .link:hover {
@@ -89,8 +100,14 @@ p.description {
 }
 
 .appTitle {
-  margin-left: 5vw;
-  margin-top: 2vh;
+  padding-left: 5vw;
+  padding-top: 2vh;
   color: #C5C6C7;
   font-size: 4vh;
+}
+
+#app_article {
+  color: #C5C6C7;
+  z-index: 999;
+  padding-left: 5vw;
 }

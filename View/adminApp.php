@@ -1,40 +1,16 @@
-<?php
-
-require_once 'Model/connection.php';
-
-
-if(isset($_POST["add"])){
-  stock($pdo);
-  echo $_POST["name"];
-}
-
-function stock($pdo) {
-
-  /*$sth = $pdo->query("
-  SELECT name_app
-  FROM homepage");
-  $apps2 = $sth->fetchAll(PDO::FETCH_ASSOC);*/
-
-
-  $name = $pdo->quote($_POST["name"]);
-  $description = $pdo->quote($_POST["description"]);
-  $logo = $pdo->quote("View/Pics/".$_POST["logo"]);
-  $usage = $pdo->quote($_POST["usage"]);
-
-  $sql = "INSERT INTO homepage (name_app, description, img_path, usages) VALUES ($name, $description, $logo, $usage)";
-
-  echo $sql;
-
-  $pdo->prepare($sql)->execute();
-}
-
- ?>
-
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <title>AIP</title>
+    <script src='https://cloud.tinymce.com/stable/tinymce.min.js'></script>
+    <script>
+    tinymce.init({
+      selector: '#appBlog',
+      plugins: "image",
+      menubar: "insert"
+    });
+    </script>
   </head>
   <body>
     <h1>Here you can add a new app to the site!</h1>
@@ -44,7 +20,7 @@ function stock($pdo) {
 
       <br>
       <br>
-      <label>Description of the app: </label>
+      <label>Short description of the app (for front page): </label>
       <textarea required name="description" rows="8" cols="80" id="descriptionArea"></textarea>
 
       <br>
@@ -61,6 +37,10 @@ function stock($pdo) {
         <option value="personal">Professional</option>
         <option value="personal">Business</option>
       </select>
+
+      <br>
+      <br>
+      <textarea name="appBlog" id="appBlog"></textarea>
 
       <br>
       <br>

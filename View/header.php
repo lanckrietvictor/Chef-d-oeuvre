@@ -32,9 +32,11 @@
 
         </div>
         <div class="col-xs-5 col-sm-5" id="signIn">
-          <i class="fa fa-user-circle" aria-hidden="true"></i>
+          <a href="index.php?admin=" id="signInLink">
+            <i class="fa fa-user-circle" aria-hidden="true"></i>
             Sign in
-          </div>
+          </a>
+        </div>
       </div>
     </div>
   </div>

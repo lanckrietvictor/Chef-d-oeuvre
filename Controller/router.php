@@ -32,13 +32,13 @@ elseif (empty($_GET["admin"])) {
 require_once 'View/header.php';
 
 if (empty($_GET) && !isset($_POST['username']) && !isset($_POST['deconnect'])) {
-  require_once 'Model/homepageData.php'; 
+  require_once 'Model/homepageData.php';
   require_once 'View/homepage.php';
 }
 
 if(!empty($_GET["action"])){
   require_once 'Model/specificAppData.php';
-  foreach ($apps as $key => $value) {
+  foreach ($specificApp as $key => $value) {
     if($_GET["action"]==$value['name_app']) {
       require_once "View/specificApp.php";
       break;
