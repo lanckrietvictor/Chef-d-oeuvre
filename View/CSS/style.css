@@ -16,7 +16,7 @@
   text-align: right;
 }
 
-#signInLink {
+.link {
   text-decoration: none;
   color: inherit;
 }
@@ -110,4 +110,5 @@ p.description {
   color: #C5C6C7;
   z-index: 999;
   padding-left: 5vw;
+  font-size: 2em;
 }

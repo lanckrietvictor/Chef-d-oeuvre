@@ -10,12 +10,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="View/CSS/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="View/CSS/style.css">
-    <script src='https://cloud.tinymce.com/stable/tinymce.min.js'></script>
-    <script>
-      tinymce.init({
-          selector: '#mytextarea'
-        });
-    </script>
     <title>AIP</title>
 </head>
 <body>
@@ -32,7 +26,7 @@
 
         </div>
         <div class="col-xs-5 col-sm-5" id="signIn">
-          <a href="index.php?admin=" id="signInLink">
+          <a href="index.php?admin=" class="link">
             <i class="fa fa-user-circle" aria-hidden="true"></i>
             Sign in
           </a>
@@ -62,13 +56,19 @@
             </div>
           </div>
           <div class="col-xs-3 col-sm-3">
-            <p>Blog</p>
+            <a href="index.php?page=blog" class="link">
+              <p>Blog</p>
+            </a>
           </div>
           <div class="col-xs-3 col-sm-3">
-            <p>About us</p>
+            <a href="index.php?page=about" class="link">
+              <p>About us</p>
+            </a>
           </div>
           <div class="col-xs-3 col-sm-3">
-            <p>Contact</p>
+            <a href="index.php?page=contact" class="link">
+              <p>Contact</p>
+            </a>
           </div>
         </div>
       </div>
