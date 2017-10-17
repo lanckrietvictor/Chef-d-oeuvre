@@ -209,3 +209,38 @@ p.description {
   float: right;
   margin-right: 5vw;
 }
+
+/*CONTACT*/
+
+.label {
+  color: #c5c6c7;
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 2vh;
+}
+
+.contactBox {
+  height: 5vh;
+  font-size: 2em;
+}
+
+#contactTextarea {
+  font-size: 2em;
+}
+
+#contactButton {
+  margin-left: 27vw;
+  width: 33vw;
+  height: 4vh;
+  font-size:
+}
+
+/*ABOUT US*/
+
+.color {
+  color: #c5c6c7;
+}
+
+.aboutPara {
+
+}

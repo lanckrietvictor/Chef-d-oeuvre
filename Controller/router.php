@@ -48,8 +48,10 @@ if(!empty($_GET["action"])){
 
 if(!empty($_GET["page"])){
   if($_GET["page"]=="blog"){
-    require_once 'View/about.php';
+    require_once 'View/blog.php';
   } else if($_GET["page"]=="contact"){
+    require_once 'View/contact.php';
+  } else if($_GET["page"]=="about"){
     require_once 'View/about.php';
   }
 }
