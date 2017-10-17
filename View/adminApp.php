@@ -25,6 +25,11 @@
 
       <br>
       <br>
+      <label>Link: </label>
+      <input type="text" name="link" value="">
+
+      <br>
+      <br>
       <label>Logo of the app (please use a high quality png): </label>
       <input required type="file" name="logo" accept="image/*">
 
@@ -45,6 +50,9 @@
       <br>
       <br>
       <input required type="submit" name="add" value="Add">
+    </form>
+    <form action="index.php" method="post">
+    	<input type="submit" name="deconnect" value="Deconnect" id="logout">
     </form>
   </body>
 </html>

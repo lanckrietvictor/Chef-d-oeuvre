@@ -41,17 +41,17 @@
           <div class="col-xs-3 col-sm-3">
             <div class="row">
               <div class="col-xs-12 col-sm-12">
-                <div class="dropdown" id="bottom">
-                  <p class="dropbtn">
-                    Used for <i class="fa fa-caret-down" aria-hidden="true"></i>
-                  </p>
-                  <div class="dropdown-content">
-                    <a href="#">All</a>
-                    <br />
-                    <a href="#">Personal use</a>
-                    <a href="#">Professional use</a>
+                <div class="dropdown">
+                  <!--<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+                  </button>-->
+                    <p class="dropdown-toggle" data-toggle="dropdown">Used for <span class="caret"></span></p>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">All</a></li>
+                      <li><a href="#">Business</a></li>
+                      <li><a href="#">Personal</a></li>
+                      <li><a href="#">Professional</a></li>
+                    </ul>
                   </div>
-                </div>
               </div>
             </div>
           </div>

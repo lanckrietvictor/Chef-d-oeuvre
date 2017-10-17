@@ -14,6 +14,7 @@ function stock($pdo) {
   $logo = $pdo->quote("View/Pics/".$_POST["logo"]);
   $usage = $pdo->quote($_POST["usage"]);
   $appArticle = $pdo->quote($_POST["appBlog"]);
+  $link = $pdo->quote($_POST["link"]);
 
   $sql = "INSERT INTO homepage (name_app, description, img_path, usages)    VALUES ($name, $description, $logo, $usage)";
 
@@ -28,7 +29,7 @@ function stock($pdo) {
   //print_r($nameApp);
   $id_app = $nameApp[0]["id_app"];
 
-  $sql2 = "INSERT INTO specificApp (id_app, app_article) VALUES ($id_app, $appArticle)";
+  $sql2 = "INSERT INTO specificApp (id_app, app_article, link) VALUES ($id_app, $appArticle, $link)";
 
   $pdo->prepare($sql2)->execute();
 }
