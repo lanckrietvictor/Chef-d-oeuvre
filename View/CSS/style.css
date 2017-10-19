@@ -267,3 +267,11 @@ p.description {
   margin: 3vh auto;
   display: block;
 }
+
+/*BLOG*/
+#firstPic {
+  width: 100vw;
+  text-align: center;
+  display: block;
+  background-color: #525E6D;
+}

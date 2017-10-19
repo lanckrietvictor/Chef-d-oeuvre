@@ -17,6 +17,7 @@ if(isset($_GET["admin"])){
     require_once 'View/adminHome.php';
   } elseif ($_GET["admin"]=="blog" && isset($_SESSION["username"])) {
     require_once 'View/adminBlog.php';
+    require_once 'Model/addArticle.php';
   } elseif ($_GET["admin"]=="addApp" && isset($_SESSION["username"])) {
     require_once 'View/adminApp.php';
     require_once 'Model/addApp.php';
@@ -48,6 +49,7 @@ if(!empty($_GET["action"])){
 
 if(!empty($_GET["page"])){
   if($_GET["page"]=="blog"){
+    require_once 'Model/blogGeneralData.php';
     require_once 'View/blog.php';
   } else if($_GET["page"]=="contact"){
     require_once 'View/contact.php';
