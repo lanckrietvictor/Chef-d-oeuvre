@@ -1,4 +1,4 @@
-<div class="container-fluid" id="aboutContainer">
+<div class="container-fluid">
   <h1 class="appTitle">About</h1>
   <h2 class="aboutSub">We support AI!</h2>
   <p class="aboutPara">

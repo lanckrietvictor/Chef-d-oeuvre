@@ -3,7 +3,7 @@
     <a class="link" href="index.php?action=<?=$value["name_app"]?>">
     <div class="col-xs-12 col-sm-12">
       <div class="row">
-        <div class="col-xs-3 image">
+        <div class="col-xs-3">
           <img src="<?= $value["img_path"] ?>" class="logo">
         </div>
 

@@ -58,6 +58,16 @@ if(!empty($_GET["page"])){
   }
 }
 
+if(!empty($_GET["blog"])){
+  require_once 'Model/specificBlogArticle.php';
+  foreach ($specificBlog as $key => $value) {
+    if($_GET["blog"]==$value['id_blog']) {
+      require_once "View/specificBlog.php";
+      break;
+    }
+  }
+}
+
 require_once 'View/footer.php';
 
 }
